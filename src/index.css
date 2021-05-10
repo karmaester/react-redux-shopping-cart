@@ -8,6 +8,11 @@ body, #root {
   margin: 0;
 }
 
+body, input, select, textarea {
+  font-size: 1.6rem;
+  font-family: helvetica, arial;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas: "header"
@@ -18,14 +23,22 @@ body, #root {
   height: 100%
 }
 
+a:hover {
+  color: #ff8000;
+}
+
 header {
   grid-area: header;
   background-color: #203040;
   color: white;
+  display: flex;
+  align-items: center;
+ padding: 0.5rem;
 }
 
 header a {
   color: white;
+  text-decoration: none;
 }
 
 main {
@@ -36,4 +49,7 @@ footer {
   grid-area: footer; 
   background-color: #203040;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
